@@ -1,0 +1,12 @@
+
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of pk, index as i">
+        <h6>Nombre: {{item.name}} </h6>
+        <h6>id: {{item.pkdx_id}}</h6>
+        <h6><img src="{{item.art_url}}"/></h6>
+        <a [routerLink]="['/detalles',i+1]">Leer mas...</a>
+
+    </li>
+    
+  </ul>
